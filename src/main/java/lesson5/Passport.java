@@ -1,11 +1,11 @@
 package lesson5;
 
-public class Passport;
+public class Passport {
 
- private String name;
- private String family;
- private int age;
- private boolean human=true;
+    private String name;
+    private String family;
+    private int age;
+    private boolean human = true;
 
 
     public Passport(String name, String family, int age, boolean human) {
@@ -15,24 +15,35 @@ public class Passport;
         this.human = human;
     }
 
-    public String getName(){
+
+    public Passport(String name, String family) {
+        this.name = name;
+        this.family = family;
+    }
+    public Passport() {
+        System.out.println("Creating object of the class Dog.");
+    }
+
+    public String getName() {
         return name;
-        }
+    }
 
-    public String getfamily(){
+    public String getfamily() {
         return family;
-}
-    public int getAge(){
+    }
+
+    public int getAge() {
         return age;
-        }
+    }
 
-    public boolean  isHuman(){
+    public boolean isHuman() {
         return human;
-        }
+    }
 
-        public void print(){
+    public void print() {
         System.out.println(name);
         System.out.println(family);
         System.out.println(age);
-        System.out.println("Human-" +human);
-        }
+        System.out.println("Human-" + human);
+    }
+}
