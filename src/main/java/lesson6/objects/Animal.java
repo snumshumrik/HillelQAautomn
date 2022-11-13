@@ -10,7 +10,7 @@ public class Animal {
         this.eats = eats;
         this.noOflegs = noOflegs;
         this.vegatarian=vegatarian;
-        super();
+        super(eats);
     }
 
     public void setName(String eats) {
@@ -23,7 +23,7 @@ public class Animal {
         return eats;
     }
 
-    public class Animal {
+    public  class Animal {
 
         private String eats;
 
